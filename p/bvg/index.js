@@ -13,7 +13,7 @@ import {parseDeparture as _parseDeparture} from '../../parse/departure.js'
 import {parseStopover as _parseStopover} from '../../parse/stopover.js'
 import {parseJourneyLeg as _parseJourneyLeg} from '../../parse/journey-leg.js'
 
-const baseProfile = require('./base.json')
+import baseProfile from './base.json' assert {type:'json'}
 import {products} from './products.js'
 
 // todo: there's also a referenced icon `{"res":"occup_fig_{low,mid}"}`

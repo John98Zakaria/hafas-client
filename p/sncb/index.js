@@ -8,7 +8,7 @@ import {Agent} from 'https'
 import {strictEqual as eql} from 'assert'
 import {parseHook} from '../../lib/profile-hooks.js'
 import {parseLine} from '../../parse/line.js'
-const baseProfile = require('./base.json')
+import baseProfile from './base.json' assert {type:'json'}
 import {products} from './products.js'
 
 // `www.belgianrail.be:443` doesn't provide the necessary CA certificate

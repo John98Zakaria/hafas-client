@@ -8,7 +8,7 @@ import {parseHook} from '../../lib/profile-hooks.js'
 import {parseLocation as _parseLocation} from '../../parse/location.js'
 import {parseJourney as _parseJourney} from '../../parse/journey.js'
 import {parseMovement as _parseMovement} from '../../parse/movement.js'
-const baseProfile = require('./base.json')
+import baseProfile from './base.json' assert {type:'json'}
 import {products} from './products.js'
 
 // todo: journey prices

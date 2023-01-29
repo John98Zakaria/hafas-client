@@ -5,7 +5,7 @@ const require = createRequire(import.meta.url)
 
 import {readFileSync} from 'fs'
 import {Agent} from 'https'
-const baseProfile = require('./base.json')
+import baseProfile from './base.json' assert {type:'json'}
 
 const products = [{
 	id: 'stadtbahn',

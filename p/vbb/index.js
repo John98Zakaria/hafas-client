@@ -11,7 +11,7 @@ import {parseLocation as _parseLocation} from '../../parse/location.js'
 import {parseJourney as _parseJourney} from '../../parse/journey.js'
 import {parseDeparture as _parseDeparture} from '../../parse/departure.js'
 
-const baseProfile = require('./base.json')
+import baseProfile from './base.json' assert {type:'json'}
 import {products} from './products.js'
 
 const parseLineWithShortName = ({parsed}, p) => {

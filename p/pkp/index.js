@@ -6,7 +6,7 @@ const require = createRequire(import.meta.url)
 import {parseHook} from '../../lib/profile-hooks.js'
 
 import {parseLocation} from '../../parse/location.js'
-const baseProfile = require('./base.json')
+import baseProfile from './base.json' assert {type:'json'}
 import {products} from './products.js'
 
 const trimStopName = ({parsed}, l) => {
