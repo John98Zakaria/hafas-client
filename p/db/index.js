@@ -1,7 +1,5 @@
 // todo: use import assertions once they're supported by Node.js & ESLint
 // https://github.com/tc39/proposal-import-assertions
-import {createRequire} from 'module'
-const require = createRequire(import.meta.url)
 
 import trim from 'lodash/trim.js'
 import uniqBy from 'lodash/uniqBy.js'
